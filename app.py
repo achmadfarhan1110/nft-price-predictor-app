@@ -46,7 +46,7 @@ LANGUAGES = {
 # --- Fungsi untuk Memuat Model ---
 @st.cache_resource
 def load_model():
-    model = joblib.load('nft_price_predictor.pkl')
+    model = joblib.load('nft_predictor_v2.pkl')
     return model
 
 model = load_model()
@@ -87,4 +87,5 @@ if st.button(lang_texts["button_text"]):
     st.success(lang_texts["success_message"].format(prediction[0]))
 
 st.info(lang_texts["disclaimer"])
+
 
