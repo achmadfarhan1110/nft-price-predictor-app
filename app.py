@@ -78,6 +78,7 @@ if st.button(lang_texts["button_text"]):
         'Sales': [sales_input],
         'Owners': [owners_input],
         'Average_Price_USD': [avg_price_input]
+})
     })
     
     # Lakukan prediksi
@@ -85,5 +86,6 @@ if st.button(lang_texts["button_text"]):
     
     # Tampilkan hasil
     st.success(lang_texts["success_message"].format(prediction[0]))
+
 
 st.info(lang_texts["disclaimer"])
