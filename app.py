@@ -87,3 +87,4 @@ if st.button(lang_texts["button_text"]):
     st.success(lang_texts["success_message"].format(prediction[0]))
 
 st.info(lang_texts["disclaimer"])
+
